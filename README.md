@@ -4,9 +4,17 @@
 
 
 Udacity Assignment
-marks is calculated
+
+
+marks are calculated
+
+
 marks are divided among correct options
+
+
 reduction for wrong
 
+
 Author
+
 Niranjan B
