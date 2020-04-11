@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCECE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainimage"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:src="@drawable/py" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Python Quiz"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:text="Guidelines"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/guidelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:text="► The Quiz consists of 10 Questions\n\t\t\t\t\t►Multiple Answer MCQ\n\t\t\t\t\t►Single Answer MCQ\n\t\t\t\t\t►Fill Up's\n► Correct Answers adds 4 marks\n► Incorrect Answers deducts 1 mark\n► Unanswered ones no changes in the score\n\n"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Your Name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:onClick="name"
+            android:text="JOIN" />
+
+        <TextView
+            android:id="@+id/namedisp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:text=""
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/wishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:text="\n\nEnjoy The Quiz\nLet's Start"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:text="Question 1"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:text="Who found Python?"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio1A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="James Gosling" />
+
+        <RadioButton
+            android:id="@+id/radio1B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="Guido van Rossum" />
+
+        <RadioButton
+            android:id="@+id/radio1C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="Dr.Charles Severance" />
+
+        <RadioButton
+            android:id="@+id/radio1D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="Bjarne Stroustrup" />
+
+        <TextView
+            android:id="@+id/Question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:text="Question 2"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:text="How will you create a dictionary in python?"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/radio2A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="dict()" />
+
+        <CheckBox
+            android:id="@+id/radio2B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="{}" />
+
+        <CheckBox
+            android:id="@+id/radio2C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="()" />
+
+        <CheckBox
+            android:id="@+id/radio2D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="create.dict" />
+
+
+        <TextView
+            android:id="@+id/Question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:text="Question 3"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="What are the supported data types in Python?"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/radio3A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Tuple" />
+
+        <CheckBox
+            android:id="@+id/radio3B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Registers" />
+
+        <CheckBox
+            android:id="@+id/radio3C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Numbers" />
+
+        <CheckBox
+            android:id="@+id/radio3D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Shift" />
+
+
+        <TextView
+            android:id="@+id/Question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 4"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/Ques4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="Which of the following environment variable for Python contains the path of an initialization file containing Python source code?"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio4A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="PYTHONPATH" />
+
+        <RadioButton
+            android:id="@+id/radio4B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="PYTHONSTARTUP" />
+
+        <RadioButton
+            android:id="@+id/radio4C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="PYTHONCASEOK" />
+
+        <RadioButton
+            android:id="@+id/radio4D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="PYTHONHOME" />
+
+        <TextView
+            android:id="@+id/Question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 5"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="Which pre-defined function will get you all the keys from the dictionary?"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Answer"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 6"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="What is the output of print(str[2:5]) if str = 'Hello World!'?"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Answer"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp" />
+
+
+        <TextView
+            android:id="@+id/Question7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 7"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="What is the output of print(list) if list = ['ad',76,2.3,'jon',0.2]?"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio7A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="['ad',76,2.3,'jon',0.2]" />
+
+        <RadioButton
+            android:id="@+id/radio7B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="list" />
+
+        <RadioButton
+            android:id="@+id/radio7C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Error" />
+
+        <RadioButton
+            android:id="@+id/radio7D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="None of the above" />
+
+        <TextView
+            android:id="@+id/Question8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 8"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="Which of them are  features of Python?"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/radio8A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="It supports automatic garbage collection" />
+
+        <CheckBox
+            android:id="@+id/radio8B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Faster than C++" />
+
+        <CheckBox
+            android:id="@+id/radio8C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="Not Case Sensitive" />
+
+        <CheckBox
+            android:id="@+id/radio8D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp"
+            android:text="It supports OOP" />
+
+        <TextView
+            android:id="@+id/Question9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 9"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="Which Python Key word terminates the loop statement and transfers execution to the statement immediately following the loop?"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Answer"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp" />
+
+        <TextView
+            android:id="@+id/Question0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16sp"
+            android:text="Question 10"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/Ques0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16sp"
+            android:text="Write the code snippet to include 'requests' module."
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Answer"
+            android:paddingLeft="8dp"
+            android:paddingRight="16sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="16sp"
+            android:text=""
+            android:textSize="30sp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:onClick="result"
+            android:text="SUBMIT" />
+
+
+    </LinearLayout>
+</ScrollView>
