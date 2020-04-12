@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CFCECE"
+    android:background="#FF5722"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:orientation="vertical">
 
         <ImageView
@@ -27,6 +28,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:text="Python Quiz"
+            android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
         <TextView
@@ -38,6 +40,7 @@
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:text="Guidelines"
+            android:textColor="#FFFFFF"
             android:textSize="25sp" />
 
 
@@ -49,6 +52,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:text="► The Quiz consists of 10 Questions\n\t\t\t\t\t►Multiple Answer MCQ\n\t\t\t\t\t►Single Answer MCQ\n\t\t\t\t\t►Fill Up's\n► Correct Answers adds 4 marks\n► Incorrect Answers deducts 1 mark\n► Unanswered ones no changes in the score\n\n"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
 
@@ -57,7 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="Enter Your Name" />
+            android:hint="Enter Your Name"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:layout_width="match_parent"
@@ -67,32 +72,38 @@
             android:layout_marginRight="100dp"
             android:layout_marginBottom="50dp"
             android:gravity="center"
-            android:onClick="name"
-            android:text="JOIN" />
+            android:id="@+id/nameButton"
+            android:text="JOIN"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/namedisp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:gravity="center"
             android:paddingLeft="16dp"
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:text=""
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
         <TextView
             android:id="@+id/wishes"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:gravity="center"
             android:paddingLeft="16dp"
             android:paddingTop="20dp"
-            android:text="\n\nEnjoy The Quiz\nLet's Start"
+            android:text="\nEnjoy The Quiz Let's Start\n"
+            android:textColor="#FFFFFF"
             android:textSize="25sp" />
 
         <TextView
             android:id="@+id/Question1"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
@@ -100,6 +111,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:text="Question 1"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -112,43 +124,54 @@
             android:paddingTop="8dp"
             android:paddingRight="16dp"
             android:text="Who found Python?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radio1A"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16dp"
-            android:text="James Gosling" />
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio1B"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16dp"
-            android:text="Guido van Rossum" />
+            <RadioButton
+                android:id="@+id/radio1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:text="James Gosling"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio1C"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16dp"
-            android:text="Dr.Charles Severance" />
+            <RadioButton
+                android:id="@+id/radio1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:text="Guido van Rossum"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio1D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16dp"
-            android:text="Bjarne Stroustrup" />
+            <RadioButton
+                android:id="@+id/radio1C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:text="Dr.Charles Severance"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radio1D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:text="Bjarne Stroustrup"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/Question2"
@@ -159,6 +182,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:text="Question 2"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -171,6 +195,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16dp"
             android:text="How will you create a dictionary in python?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <CheckBox
@@ -180,7 +205,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16dp"
-            android:text="dict()" />
+            android:text="dict()"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio2B"
@@ -189,7 +215,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16dp"
-            android:text="{}" />
+            android:text="{}"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio2C"
@@ -198,7 +225,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16dp"
-            android:text="()" />
+            android:text="()"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio2D"
@@ -207,7 +235,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16dp"
-            android:text="create.dict" />
+            android:text="create.dict"
+            android:textColor="#FFFFFF" />
 
 
         <TextView
@@ -219,6 +248,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:text="Question 3"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -231,6 +261,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="What are the supported data types in Python?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <CheckBox
@@ -240,7 +271,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Tuple" />
+            android:text="Tuple"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio3B"
@@ -249,7 +281,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Registers" />
+            android:text="Registers"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio3C"
@@ -258,7 +291,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Numbers" />
+            android:text="Numbers"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio3D"
@@ -267,7 +301,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Shift" />
+            android:text="Module"
+            android:textColor="#FFFFFF" />
 
 
         <TextView
@@ -279,6 +314,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 4"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
         <TextView
@@ -290,43 +326,54 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="Which of the following environment variable for Python contains the path of an initialization file containing Python source code?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radio4A"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="PYTHONPATH" />
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio4B"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="PYTHONSTARTUP" />
+            <RadioButton
+                android:id="@+id/radio4A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="PYTHONPATH"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio4C"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="PYTHONCASEOK" />
+            <RadioButton
+                android:id="@+id/radio4B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="PYTHONSTARTUP"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio4D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="PYTHONHOME" />
+            <RadioButton
+                android:id="@+id/radio4C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="PYTHONCASEOK"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radio4D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="PYTHONHOME"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/Question5"
@@ -337,6 +384,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 5"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -349,6 +397,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="Which pre-defined function will get you all the keys from the dictionary?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <EditText
@@ -359,7 +408,8 @@
             android:hint="Answer"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="" />
+            android:text=""
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/Question6"
@@ -370,6 +420,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 6"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -382,6 +433,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="What is the output of print(str[2:5]) if str = 'Hello World!'?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <EditText
@@ -391,7 +443,8 @@
             android:layout_marginLeft="16dp"
             android:hint="Answer"
             android:paddingLeft="8dp"
-            android:paddingRight="16sp" />
+            android:paddingRight="16sp"
+            android:textColor="#FFFFFF" />
 
 
         <TextView
@@ -403,6 +456,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 7"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -415,43 +469,54 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="What is the output of print(list) if list = ['ad',76,2.3,'jon',0.2]?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radio7A"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="['ad',76,2.3,'jon',0.2]" />
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio7B"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="list" />
+            <RadioButton
+                android:id="@+id/radio7A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="['ad',76,2.3,'jon',0.2]"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio7C"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="Error" />
+            <RadioButton
+                android:id="@+id/radio7B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="list"
+                android:textColor="#FFFFFF" />
 
-        <RadioButton
-            android:id="@+id/radio7D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="16sp"
-            android:text="None of the above" />
+            <RadioButton
+                android:id="@+id/radio7C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="Error"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radio7D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16sp"
+                android:text="None of the above"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/Question8"
@@ -462,6 +527,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 8"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -474,6 +540,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="Which of them are  features of Python?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <CheckBox
@@ -483,7 +550,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="It supports automatic garbage collection" />
+            android:text="It supports automatic garbage collection"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio8B"
@@ -492,7 +560,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Faster than C++" />
+            android:text="Faster than C++"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio8C"
@@ -501,7 +570,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="Not Case Sensitive" />
+            android:text="Not Case Sensitive"
+            android:textColor="#FFFFFF" />
 
         <CheckBox
             android:id="@+id/radio8D"
@@ -510,7 +580,8 @@
             android:layout_marginLeft="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="16sp"
-            android:text="It supports OOP" />
+            android:text="It supports OOP"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/Question9"
@@ -521,6 +592,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 9"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -533,6 +605,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="Which Python Key word terminates the loop statement and transfers execution to the statement immediately following the loop?"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <EditText
@@ -542,7 +615,8 @@
             android:layout_marginLeft="16dp"
             android:hint="Answer"
             android:paddingLeft="8dp"
-            android:paddingRight="16sp" />
+            android:paddingRight="16sp"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/Question0"
@@ -553,6 +627,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16sp"
             android:text="Question 10"
+            android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
 
@@ -565,6 +640,7 @@
             android:paddingTop="8dp"
             android:paddingRight="16sp"
             android:text="Write the code snippet to include 'requests' module."
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <EditText
@@ -574,7 +650,8 @@
             android:layout_marginLeft="16dp"
             android:hint="Answer"
             android:paddingLeft="8dp"
-            android:paddingRight="16sp" />
+            android:paddingRight="16sp"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/result"
@@ -583,6 +660,7 @@
             android:gravity="center"
             android:paddingRight="16sp"
             android:text=""
+            android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
 
@@ -594,8 +672,22 @@
             android:layout_marginRight="100dp"
             android:layout_marginBottom="50dp"
             android:gravity="center"
-            android:onClick="result"
-            android:text="SUBMIT" />
+            android:id="@+id/submit"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:id="@+id/reset"
+            android:text="RESET"
+            android:textColor="#FFFFFF" />
 
 
     </LinearLayout>
