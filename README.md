@@ -3,9 +3,6 @@
 
 
 
-Udacity Assignment
-
-
 marks are calculated
 
 
